@@ -13,6 +13,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
   background: url('../images/space-background.jpg') no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
