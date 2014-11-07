@@ -12,6 +12,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
       <!-- endbuild -->
       <link rel="shortcut icon" href="favicon.ico"/>
   </head>
@@ -23,19 +24,19 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">Resume Project</h3>
+          <div class="header-title col-sm-4 col-xs-12 col-sm-push-4">
+              <h3 class="">Resume Galaxy</h3>
+          </div>
+          <div class="header-discovered col-sm-4 col-xs-6 col-sm-pull-4">
+              <h3 class="">Discovered:</h3>
+          </div>
+          <div class="header-range col-sm-4 col-xs-6">
+              <h3 class="">Range</h3>
+          </div>
       </div>
 
       <div ng-view=""></div>
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
     </div>
 
 
