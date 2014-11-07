@@ -1,3 +1,6 @@
-<div class="">
+<div class="galaxy-container">
+    <div ng-if="utils.missionStarted" class="planets">
 
+    </div>
+    <div ng-if="!utils.missionStarted" ng-include="'views/start-mission.html'"></div>
 </div>

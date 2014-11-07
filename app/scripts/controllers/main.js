@@ -9,9 +9,11 @@
  */
 angular.module('resumeProjectApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.utils = {
+      missionStarted: false
+    }
+
+    $scope.startMission = function () {
+      $scope.utils.missionStarted = true;
+    }
   });
