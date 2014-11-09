@@ -16,7 +16,16 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
-  });
+  describe('missionStarted', function () {
+    it('should start in  false', function () {
+      expect(scope.utils.missionStarted).toBe(false);
+    })
+    it('should change to true when called "Start Mission"', function () {
+      scope.startMission();
+      expect(scope.utils.missionStarted).toBe(true);
+    })
+  })
+
+
+
 });
