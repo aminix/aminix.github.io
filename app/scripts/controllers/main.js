@@ -16,4 +16,8 @@ angular.module('resumeProjectApp')
     $scope.startMission = function () {
       $scope.utils.missionStarted = true;
     }
+
+    $scope.planetClicked = function (planetName) {
+      console.log('lala', planetName)
+    }
   });
