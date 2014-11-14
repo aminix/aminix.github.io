@@ -21,7 +21,7 @@
       background-image: -webkit-radial-gradient(circle, transparent 80%, black);/* Safari 5.1 to 6.0 */
       background-image: -o-radial-gradient(circle, transparent, black); /* For Opera 11.6 to 12.0 */;
       background-image: -moz-radial-gradient(circle, transparent, black); /* For Firefox 3.6 to 15 */;
-      background-image: radial-gradient(circle, transparent, rgba(128, 128, 128, 0.3), black); /* Standard syntax */;
+      background-image: radial-gradient(circle, transparent, #191919); /* Standard syntax */;
     }
   }
   .planet-name {
@@ -34,14 +34,42 @@
     .planet {
       width: 70px;
       height: 70px;
-      background-image: url('../images/languagia-texture.png');
+      background: url('../images/languagia-texture.png') center center;
     }
   }
   &#work-experiencitas {
     .planet {
       width: 200px;
       height: 200px;
-      background-image: url('../images/work-texture.png');
+      background: url('../images/work-texture.png') center center;
+    }
+  }
+  &#educatia {
+    .planet {
+      width: 150px;
+      height: 150px;
+      background: url('../images/educatia-texture.png') center center;
+    }
+  }
+  &#hobbiens {
+    .planet {
+      width: 50px;
+      height: 50px;
+      background: url('../images/hobbiens-texture.png') center center;
+    }
+  }
+  &#projectus {
+    .planet {
+      width: 130px;
+      height: 130px;
+      background: url('../images/projectus-texture.png') center center;
+    }
+  }
+  &#tecnicus-knowledge {
+    .planet {
+      width: 150px;
+      height: 150px;
+      background: url('../images/tecnicus-knowledge.png') center center;
     }
   }
 }
