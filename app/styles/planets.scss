@@ -11,7 +11,8 @@
     -webkit-border-radius: 50%;
     &:hover {
       cursor: pointer;
-      zoom: 1.05;
+      box-shadow: black 10px 10px 30px;
+      -moz-box-shadow: black 10px 10px 30px;
     }
     .planet-shader {
       width: 100%;
@@ -32,7 +33,6 @@
     font-size: 18px;
   }
   &#languagia {
-    height: 98px;
     .planet {
       width: 70px;
       height: 70px;
@@ -40,7 +40,6 @@
     }
   }
   &#work-experiencitas {
-    height: 227px;
     .planet {
       width: 200px;
       height: 200px;
@@ -48,7 +47,6 @@
     }
   }
   &#educatia {
-    height: 178px;
     .planet {
       width: 150px;
       height: 150px;
@@ -56,7 +54,6 @@
     }
   }
   &#hobbiens {
-    height: 77px;
     .planet {
       width: 50px;
       height: 50px;
@@ -64,7 +61,6 @@
     }
   }
   &#projectus {
-    height: 164px;
     .planet {
       width: 130px;
       height: 130px;
@@ -72,11 +68,54 @@
     }
   }
   &#tecnicus-knowledge {
-    height: 185px;
     .planet {
       width: 150px;
       height: 150px;
       background: url('../images/tecnicus-knowledge.png') center center;
     }
   }
+}
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rotateIn {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
