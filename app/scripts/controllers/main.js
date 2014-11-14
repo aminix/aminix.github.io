@@ -15,6 +15,7 @@ angular.module('resumeProjectApp')
 
     $scope.startMission = function () {
       $scope.utils.missionStarted = true;
+      angular.element('#start-mission-audio')[0].play();
     }
 
     $scope.planetClicked = function (planetName) {

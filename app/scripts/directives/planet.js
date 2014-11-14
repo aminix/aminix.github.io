@@ -9,6 +9,15 @@ angular.module('resumeProjectApp')
           '<span class="planet-name">'+ attr.planetName +'</span>' +
         '</div>'
       },
-      replace: true
+      replace: true,
+      link: function (scope, elem, attr) {
+        var audio = $("#planet-hover-audio")[0];
+        $(elem).find('.planet').bind('mouseenter', (function() {
+          audio.play();
+        }));
+        $(elem).find('.planet').bind('mouseleave', (function() {
+          audio.pause();
+        }));
+      }
     }
   })

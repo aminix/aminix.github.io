@@ -11,6 +11,7 @@
     -webkit-border-radius: 50%;
     &:hover {
       cursor: pointer;
+      zoom: 1.05;
     }
     .planet-shader {
       width: 100%;
@@ -31,6 +32,7 @@
     font-size: 18px;
   }
   &#languagia {
+    height: 98px;
     .planet {
       width: 70px;
       height: 70px;
@@ -38,6 +40,7 @@
     }
   }
   &#work-experiencitas {
+    height: 227px;
     .planet {
       width: 200px;
       height: 200px;
@@ -45,6 +48,7 @@
     }
   }
   &#educatia {
+    height: 178px;
     .planet {
       width: 150px;
       height: 150px;
@@ -52,6 +56,7 @@
     }
   }
   &#hobbiens {
+    height: 77px;
     .planet {
       width: 50px;
       height: 50px;
@@ -59,6 +64,7 @@
     }
   }
   &#projectus {
+    height: 164px;
     .planet {
       width: 130px;
       height: 130px;
@@ -66,6 +72,7 @@
     }
   }
   &#tecnicus-knowledge {
+    height: 185px;
     .planet {
       width: 150px;
       height: 150px;
