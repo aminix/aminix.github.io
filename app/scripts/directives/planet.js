@@ -17,6 +17,7 @@ angular.module('resumeProjectApp')
         }));
         $(elem).find('.planet').bind('mouseleave', (function() {
           audio.pause();
+          audio.currentTime = 0;
         }));
       }
     }
