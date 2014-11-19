@@ -12,9 +12,11 @@ angular.module('resumeProjectApp')
     $scope.utils = {
       missionStarted: false,
       percentageDiscovered: 0,
-      range: RangesInfo.level_1
+      range: RangesInfo.level_1,
+      showLast: false
     }
     var visited = {};
+    var rangeChanged = false;
 
     $scope.startMission = function () {
       $scope.utils.missionStarted = true;
@@ -36,6 +38,20 @@ angular.module('resumeProjectApp')
     $scope.handleRange = function (percentage) {
       if (percentage > $scope.utils.range.max) {
         $scope.utils.range = RangesInfo[$scope.utils.range.next];
+        rangeChanged = true;
+      }
+    }
+
+    $scope.showNewRangeModal = function () {
+      if (rangeChanged) {
+        angular.element('.new-range-modal').modal('show');
+        rangeChanged = false;
+      }
+    }
+
+    $scope.closeNewRangeModal = function () {
+      if ($scope.utils.range == RangesInfo.level_5 && $scope.utils.percentageDiscovered == 99.9) {
+        $scope.utils.showLast = true;
       }
     }
   });

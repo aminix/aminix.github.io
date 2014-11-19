@@ -28,6 +28,9 @@
             <div class="col-sm-4 col-sm-offset-1">
                 <div planet id="tecnicus-knowledge" planet-name="Tecnicus Knowledge"></div>
             </div>
+            <div class="col-sm-3">
+                <div ng-if="utils.showLast" planet id="thanks" planet-name="You Rock!"></div>
+            </div>
         </div>
     </div>
     <div ng-if="!utils.missionStarted" class="start-mission-container">
@@ -52,3 +55,4 @@
 <div ng-include="'views/modals/projectus-modal.html'"></div>
 <div ng-include="'views/modals/tecnicus-knowledge-modal.html'"></div>
 <div ng-include="'views/modals/thanks-modal.html'"></div>
+<div ng-include="'views/modals/new-range-modal.html'"></div>

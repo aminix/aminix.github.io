@@ -81,6 +81,25 @@
       background: url('../images/tecnicus-knowledge.png') center center;
     }
   }
+  &#thanks {
+    .planet {
+      width: 100px;
+      height: 100px;
+      background: url('../images/star.png') center center no-repeat;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      &:hover {
+        cursor: pointer;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        zoom: 1.1;
+      }
+      .planet-shader {
+        display: none;
+      }
+    }
+  }
 }
 @-webkit-keyframes rotateIn {
   0% {

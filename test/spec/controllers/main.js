@@ -25,6 +25,7 @@ describe('Controller: MainCtrl', function () {
       expect(scope.utils.missionStarted).toBe(false);
       expect(scope.utils.percentageDiscovered).toBe(0);
       expect(scope.utils.range).toBe(RangesInfo['level_1']);
+      expect(scope.utils.showLast).toBe(false);
     })
     it('should change to true when called "Start Mission"', function () {
       scope.startMission();
@@ -77,7 +78,26 @@ describe('Controller: MainCtrl', function () {
       })
     })
   })
-
+  describe('finish game', function () {
+    it('should show last planet when reached maximum score', function () {
+      var planets = Object.keys(PlanetsInfo);
+      planets.forEach(function (item) {
+        if (item !== 'thanks'){
+          scope.planetClicked(item);
+        }
+      })
+      scope.closeNewRangeModal();
+      expect(scope.utils.percentageDiscovered).toBe(99.9);
+      expect(scope.utils.range).toBe(RangesInfo.level_5);
+      expect(scope.utils.showLast).toBe(true);
+    })
+    it('should now show last planet if not all planets are clicked', function () {
+      var planet = 'languagia';
+      scope.planetClicked(planet);
+      scope.closeNewRangeModal();
+      expect(scope.utils.showLast).toBe(false);
+    })
+  })
 
 
 });
