@@ -1,5 +1,5 @@
 angular.module('resumeProjectApp')
-  .directive('planet', function () {
+  .directive('planet', function (PlanetsInfo) {
     return {
       template: function (elem, attr) {
         return '<div class="planet-wrapper">' +
@@ -19,6 +19,10 @@ angular.module('resumeProjectApp')
           audio.pause();
           audio.currentTime = 0;
         }));
+        $(elem).bind('click', function () {
+          angular.element('.' + PlanetsInfo[attr.id].template).modal('show');
+
+        })
       }
     }
   })

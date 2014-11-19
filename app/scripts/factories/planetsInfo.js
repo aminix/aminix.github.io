@@ -8,18 +8,23 @@ angular.module('resumeProjectApp')
       },
       'educatia': {
         name: 'Educatia',
-        percentage: 25,
+        percentage: 22,
         template: 'educatia-modal'
       },
       'tecnicus-knowledge': {
         name: 'Tecnicus Knowledge',
-        percentage: 20,
+        percentage: 17,
         template: 'tecnicus-knowledge-modal'
       },
       'languagia': {
         name: 'Languagia',
         percentage: 6,
         template: 'languagia-modal'
+      },
+      'contactia': {
+        name: 'Contactia',
+        percentage: 6,
+        template: 'contactia-modal'
       },
       'projectus': {
         name: 'Projectus',

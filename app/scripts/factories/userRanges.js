@@ -14,7 +14,7 @@ angular.module('resumeProjectApp')
         next: 'level_3'
       },
       'level_3': {
-        name: 'Feelance Astronaut',
+        name: 'Freelance Astronaut',
         min: 31,
         max: 60,
         next: 'level_4'
