@@ -1,11 +1,22 @@
-<div class="modal fade new-range-modal">
+<div data-backdrop="static" data-keyboard="false" class="modal fade new-range-modal">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-body">
-                {{utils.range}}
-            </div>
-            <div class="modal-footer">
-                <button ng-click="closeNewRangeModal()" type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            <div class="content-wrapper">
+                <div class="modal-header">
+                    <h3 class="modal-title">New level: {{utils.range.name}}!</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="badge-img">
+                        <img src="{{utils.range.img}}"/>
+                    </div>
+                    <div class="range-description">
+                        <p>{{utils.range.description}}</p>
+                        <p ng-if="utils.range.goodbye">{{utils.range.goodbye}}</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button ng-click="closeNewRangeModal()" type="button" class="btn btn-start-mission antic-font" data-dismiss="modal">Continue</button>
+                </div>
             </div>
         </div>
     </div>
