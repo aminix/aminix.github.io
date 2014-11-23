@@ -34,12 +34,17 @@
 }
 
 /* Header changes */
-@media (max-width: 328px) {
+@media (max-width: 298px) {
   .planets-container {
-    margin-top: 210px;
+    margin-top: 270px;
   }
 }
-@media (min-width: 328px) and (max-width: 923px) {
+@media (min-width: 298px) and (max-width: 553px) {
+  .planets-container {
+    margin-top: 230px;
+  }
+}
+@media (min-width: 553px) and (max-width: 923px) {
   .planets-container {
     margin-top: 120px;
   }
