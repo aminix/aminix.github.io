@@ -19,7 +19,7 @@ angular.module('resumeProjectApp')
           audio.pause();
           audio.currentTime = 0;
         }));
-        $(elem).bind('click', function () {
+        $(elem).find('.planet').bind('click', function () {
           angular.element('.' + PlanetsInfo[attr.id].template).modal('show');
 
         })
