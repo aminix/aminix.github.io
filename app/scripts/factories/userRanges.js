@@ -52,8 +52,7 @@ angular.module('resumeProjectApp')
         max: Infinity,
         img_sm: 'images/medal5-small.png',
         img: 'images/medal5.png',
-        description: 'You found a source of GOLD! And it\'s all yours! Who would have known gold makes you rich in space too?. You are the Galaxy Owner now, you have your own people who love you and you control all space commercial routes, you have your own business going on there now, you are definitely not going to live just on Earth anymore, you can live wherever you want.',
-        goodbye: 'Story aside, thank you very much for going through all of my mini project! I had fun doing it and I hope I could make your recruiting day a little bit different. You are awesome! Thank you!'
+        description: 'You found a source of GOLD! And it\'s all yours! Who would have known gold makes you rich in space too?. You are the Galaxy Owner now, you have your own people who love you and you control all space commercial routes, you have your own business going on there now, you are definitely not going to live just on Earth anymore, you can live wherever you want.'
       }
     }
   })
